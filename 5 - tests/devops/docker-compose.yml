@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  website:
+    build: 
+      context: ../
+      dockerfile: ./devops/Dockerfile
+    links:
+      - db
+    ports:
+      - '80:80'
+
+  db:
+    image: mysql:5.7
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: devops2020
+      MYSQL_DATABASE: devops
