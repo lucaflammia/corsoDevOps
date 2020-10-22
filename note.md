@@ -58,4 +58,5 @@ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"partecipanti":"4"}' \
   http://localhost/insert
+
 ```
