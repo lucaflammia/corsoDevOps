@@ -59,4 +59,5 @@ curl --header "Content-Type: application/json" \
   --data '{"partecipanti":"4"}' \
   http://localhost/insert
 
+
 ```
